@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import fobot from './assets/fobot.png';
+import StripeContainer from './components/StripeContainer';
 
 function App() {
+  const [showItem, setShowItem] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>FOBOT</h1>
+      {showItem ? (
+        <StripeContainer />
+      ) : (
+        <>
+          <h3>$1.00</h3>
+          <div style={{ textAlign: 'center' }}>
+            <img src={fobot} alt='Fobot' />
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <button onClick={() => setShowItem(true)}>Purchase Product</button>
+          </div>
+        </>
+      )}
     </div>
   );
 }
