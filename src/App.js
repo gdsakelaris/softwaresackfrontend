@@ -7,7 +7,7 @@ function App() {
   const [showItem, setShowItem] = useState(false);
   return (
     <div className='App'>
-      <h1>FOBOT</h1>
+      <h1>Code2Text</h1>
       {showItem ? (
         <StripeContainer />
       ) : (
