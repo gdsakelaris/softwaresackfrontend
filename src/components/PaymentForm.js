@@ -25,7 +25,8 @@ const CARD_OPTIONS = {
 export default function PaymentForm() {
     const [success, setSuccess] = useState(false);
     const bucket = "software-sack"
-    const key = "FOBOT.exe"
+    // const key = "FOBOT.exe"
+    const key = "Code2Text.exe";
     const stripe = useStripe();
     const elements = useElements();
 
