@@ -51,7 +51,8 @@ export default function PaymentForm() {
                 const response = await axios.post(
                     `${process.env.REACT_APP_BACKEND_URL}payment`,
                     {
-                        amount: 100,
+                        // amount: 100,
+                        amount: 500,
                         id,
                         bucket,
                         key,

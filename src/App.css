@@ -37,7 +37,7 @@ button {
 	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
 		inset 0 1px 0 #165e8f;
 	border-radius: 4px;
-	color: #fff;
+	color: whitesmoke;
 	font-weight: 600;
 	cursor: pointer;
 	transition: all 100ms ease-in-out;
@@ -59,10 +59,11 @@ button:active {
 }
 
 h1,
+h2,
 h3 {
 	text-align: center;
 }
 
 html {
-	/* background-color: #04b3d9; */
+	background-color: lightsteelblue;
 }

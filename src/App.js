@@ -8,18 +8,24 @@ function App() {
   const [showItem, setShowItem] = useState(false);
   return (
     <div className='App'>
-      <h1>Code2Text</h1>
+      <h1 style={{ color: "#1a669a" }}>Code2Text.exe</h1>
       {showItem ? (
         <StripeContainer />
       ) : (
         <>
-          <h3>$1.00</h3>
+          <h2>$5.00</h2>
           <div style={{ textAlign: 'center' }}>
             <img src={code2text} alt='Logo' />
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            {/* <button onClick={() => setShowItem(true)}>Purchase Product</button> */}
+          {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
             <button onClick={() => setShowItem(true)}>Purchase</button>
+          </div> */}
+          <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+            <button onClick={() => setShowItem(true)}>Purchase</button>
+            <a href="https://www.virustotal.com/gui/file/bdbb6e2e45fe403809ff028af123d2a27564c6c3951930b80b5b756e17df92ff/detection" target="_blank" rel="noopener noreferrer" style={{ marginTop: '20px', textAlign: 'center', color: 'black', fontWeight: 'bold', fontSize: "14px" }}>
+              {/* , textDecoration: "none" }}> */}
+              Security Report
+            </a>
           </div>
         </>
       )}
