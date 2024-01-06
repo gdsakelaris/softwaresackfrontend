@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css';
-// import fobot from './assets/fobot.png';
 import code2text from './assets/Code2Text.png';
 import StripeContainer from './components/StripeContainer';
 
@@ -17,18 +16,17 @@ function App() {
           <div style={{ textAlign: 'center' }}>
             <img src={code2text} alt='Logo' />
           </div>
-          {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <button onClick={() => setShowItem(true)}>Purchase</button>
-          </div> */}
           <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
             <button onClick={() => setShowItem(true)}>Purchase</button>
             <a href="https://www.virustotal.com/gui/file/bdbb6e2e45fe403809ff028af123d2a27564c6c3951930b80b5b756e17df92ff/detection" target="_blank" rel="noopener noreferrer" style={{ marginTop: '20px', textAlign: 'center', color: 'black', fontWeight: 'bold', fontSize: "14px" }}>
-              {/* , textDecoration: "none" }}> */}
               Security Report
             </a>
           </div>
         </>
       )}
+      <div className="App-footer">
+        <p>© 2023 Telescode LLC. All rights reserved.</p>
+      </div>
     </div>
   );
 }
