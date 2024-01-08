@@ -23,8 +23,16 @@ body {
 	padding: 15px;
 }
 
+.payment-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh; 
+  }
+
 .FormGroup {
-	margin: 0 15px 20px;
+	margin: auto;
 	padding: 0;
 	border-style: none;
 	background-color: #7795f8;
@@ -32,6 +40,7 @@ body {
 	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
 		inset 0 1px 0 #829fff;
 	border-radius: 4px;
+	width: 55%;
 }
 
 .FormRow {
@@ -48,7 +57,7 @@ body {
 }
 
 .StripeElement {
-	width: 100%;
+	width: 50%;
 	padding: 11px 15px 11px 0;
 }
 
@@ -57,10 +66,11 @@ button {
 	font-size: 16px;
 	width: calc(15%);
 	height: 40px;
-	margin: 40px 15px 0;
-	background-color: #1a669a;
+	margin: auto;
+	margin-top: 10px;
+	background-color: #7795f8;
 	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
-		inset 0 1px 0 #165e8f;
+		inset 0 1px 0 #7795f8;
 	border-radius: 4px;
 	color: whitesmoke;
 	font-weight: 600;
@@ -70,9 +80,13 @@ button {
 	border: none;
 }
 
+button:hover {
+	background-color: green;
+}
+
 button:active {
-	background-color: #d782d9;
+	background-color: green;
 	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
-		inset 0 1px 0 #e298d8;
+		inset 0 1px 0 green;
 	transform: scale(0.99);
 }
