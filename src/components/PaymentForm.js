@@ -25,7 +25,6 @@ const CARD_OPTIONS = {
 export default function PaymentForm() {
     const [success, setSuccess] = useState(false);
     const bucket = "software-sack"
-    // const key = "FOBOT.exe"
     const key = "Code2Text.exe";
     const stripe = useStripe();
     const elements = useElements();
@@ -43,16 +42,14 @@ export default function PaymentForm() {
                 // Replace with your LIVE Publishable Stripe API key
                 const stripeApiKey =
                     "pk_live_51NH8wuDVWcsv0GQDGh4E7AHXRr06DnRWDSp6fOlhR7MgbcNWaFFvgQh9oAc4NqNdgScgEfy1uDPvptyfDt4oDpFs00pbDe48Me";
-
                 // Replace with your TEST Publishable Stripe API key
                 // const stripeApiKey =
                 //     "pk_test_51NH8wuDVWcsv0GQDDA50qRas53ULlGs0w9GHQARixVZhS4PUYwJlyMOf0EaQOwAIcsiysa9EGI6kiSypsAbezWeF007HfK5Tya";
-
                 const response = await axios.post(
                     `${process.env.REACT_APP_BACKEND_URL}payment`,
                     {
                         // amount: 100,
-                        amount: 500,
+                        amount: 100,
                         id,
                         bucket,
                         key,
