@@ -90,3 +90,9 @@ button:active {
 		inset 0 1px 0 green;
 	transform: scale(0.99);
 }
+
+@media only screen and (max-width: 600px) {
+    button {
+        width: 90%;
+    }
+}
